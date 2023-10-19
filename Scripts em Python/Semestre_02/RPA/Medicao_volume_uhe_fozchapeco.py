@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-apiToken = 'API TOKEN coletar quando criar o bot'
-chatID = 'COLETAR DO CHAT ID'
+apiToken = '6698525124:AAH6UO4jJQm-89gXBlSVetTQ1U4wtQPWbIw'
+chatID = '1915158855'
 
 
 def SendMessage(msg):
