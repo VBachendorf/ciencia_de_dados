@@ -21,7 +21,7 @@ def coletar_vazao_rio(url):
         print("acesso concedido")
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        titulos_noticias = soup.find('div', class_='data-hidrological invert')
+        titulos_noticias = soup.find('div', class_='flex flex-col gap-6 md:gap-4')
         
         
         for titulo in titulos_noticias:
@@ -34,7 +34,7 @@ def coletar_vazao_rio(url):
         print(f"Erro ao acessar a página. Código de status: {response.status_code}")
 
 
-url_site_fozchapeco = 'http://www.fozdochapeco.com.br/usina/#dados-hidrologicos'
+url_site_fozchapeco = 'https://br.investing.com/commodities/brent-oil'
 
 coletar_vazao_rio(url_site_fozchapeco)
 
